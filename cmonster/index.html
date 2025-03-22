@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>C.Monster Bakery</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;700&family=Poppins:wght@700&display=swap">
+<link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+    <div class="w3-top">
+        <div class="w3-row w3-padding custom-navbar">
+          <div class="w3-col s3">
+            <a href="#" class="w3-button w3-block custom-button">HOME</a>
+          </div>
+          <div class="w3-col s3">
+            <a href="#about" class="w3-button w3-block custom-button">ABOUT</a>
+          </div>
+          <div class="w3-col s3">
+            <a href="#menu" class="w3-button w3-block custom-button">MENU</a>
+          </div>
+          <div class="w3-col s3">
+            <a href="#contact" class="w3-button w3-block custom-button">CONTACT US</a>
+          </div>
+        </div>
+      </div>
+      
+
+      <header class="bgimg w3-display-container" id="home">
+        <img src="header.jpg" alt="bgimg">
+      </header>
+
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content content-box">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE CAFE</span></h5>
+    <p>C.Monster Bakery started as a simple hobby, born out of a love for baking. What began in a small kitchen quickly grew into something much more significant. In an effort to provide for my family and shield them from financial struggles, this passion turned into a thriving business. With dedication, creativity, and the support of loved ones, C.Monster Bakery has become a place where great taste meets heart, delivering sweet treats and moments of joy to all who visit.</p>
+    <img src="a.jpg" class="w3-margin-top responsive-img">
+    <p><strong>Treat yourself to something sweet today.</strong> DM to order.</p>
+    <p><strong>MOP:</strong> GCash/BPI Bank Transfer</p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content content-box">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5>
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Brookies');" id="myLink">
+        <div class="w3-col s6 tablink">Brookies</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Muffins & Cupcakes');" id="myLink">
+        <div class="w3-col s6 tablink">Muffins & Cupcakes</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Custom Cakes');"  id="myLink">
+        <div class="w3-col s6 tablink">Custom Cakes</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Cookies');">
+        <div class="w3-col s6 tablink">Cookies</div>
+      </a>
+    </div>
+
+    <div id="Brookies" class="w3-container menu w3-padding-48 w3-card w3-center">
+        <div class="menu-grid">
+          <div class="menu-item">
+            <h5>Red Velvet</h5>
+            <img src="b.jpg" 
+                 alt="Red Velvet" class="menu-img">
+            <p class="w3-text-grey">PHP 45.00</p>
+          </div>
+      
+          <div class="menu-item">
+            <h5>Smores</h5>
+            <img src="c.jpg" 
+                 alt="Chocolate Fudge" class="menu-img">
+            <p class="w3-text-grey">PHP 45.00</p>
+          </div>
+      
+          <div class="menu-item">
+            <h5>Matcha Delight</h5>
+            <img src="d.jpg" 
+                 alt="Matcha Delight" class="menu-img">
+            <p class="w3-text-grey">PHP 40.00</p>
+          </div>
+      
+          <div class="menu-item">
+            <h5>Classic Brookie</h5>
+            <img src="e.jpg" 
+                 alt="brookie" class="menu-img">
+            <p class="w3-text-grey">PHP 40.00</p>
+          </div>
+        </div>
+      </div>
+
+
+
+    <div id="Muffins & Cupcakes" class="w3-container menu w3-padding-48 w3-card w3-center">
+        <div class="menu-grid">
+            <div class="menu-item">
+              <h5>Cupcake Monster</h5>
+              <img src="f.jpg" 
+                   alt="Cupcake Monster" class="menu-img">
+     
+            </div>
+        
+            <div class="menu-item">
+              <h5>Christmas Cupcakes</h5>
+              <img src="g.jpg" 
+                   alt="Chrismas Cupcakes" class="menu-img">
+            
+            </div>
+        
+            <div class="menu-item">
+              <h5>Magic Unicorn</h5>
+              <img src="h.jpg" 
+                   alt="Magic Unicorn" class="menu-img">
+           
+            </div>
+        
+            <div class="menu-item">
+              <h5>Mocha Mountain</h5>
+              <img src="i.jpg" 
+                   alt="Mocha Mountain" class="menu-img">
+             
+            </div>
+          </div>
+        </div>
+
+  <div id="Custom Cakes" class="w3-container menu w3-padding-48 w3-card">
+    <div class="menu-grid">
+        <div class="menu-item">
+          <h5>Twinkle Birthday Cake</h5>
+          <img src="i.jpg" 
+               alt="Cupcake Monster" class="menu-img">
+ 
+        </div>
+    
+        <div class="menu-item">
+          <h5>Butterfly Bliss</h5>
+          <img src="k.jpg" 
+               alt="Chrismas Cupcakes" class="menu-img">
+        
+        </div>
+    
+        <div class="menu-item">
+          <h5>Custom Bento Cakes</h5>
+          <img src="l.jpg" 
+               alt="Magic Unicorn" class="menu-img">
+       
+        </div>
+    
+        <div class="menu-item">
+          <h5>Piggy Bank Robber</h5>
+          <img src="m.jpg" 
+               alt="Mocha Mountain" class="menu-img">
+         
+        </div>
+      </div>
+    </div>
+
+  <div id="Cookies" class="w3-container menu w3-padding-48 w3-card">
+    <div class="menu-grid">
+        <div class="menu-item">
+          <h5>Macarons</h5>
+          <img src="n.jpg" 
+               alt="Macarons" class="menu-img">
+               <p class="w3-text-grey">PHP 50.00</p>
+ 
+        </div>
+    
+        <div class="menu-item">
+          <h5>Oats & Raisins</h5>
+          <img src="o.jpg" 
+               alt="Oats & Raisins" class="menu-img">
+               <p class="w3-text-grey">PHP 40.00</p>
+        
+        </div>
+    
+        <div class="menu-item">
+          <h5>Red Velvet</h5>
+          <img src="p.jpg" 
+               alt="Red Velvet" class="menu-img">
+               <p class="w3-text-grey">PHP 45.00</p>
+       
+        </div>
+    
+        <div class="menu-item">
+          <h5>Classic Chocolate Chip</h5>
+          <img src="q.jpg" 
+               alt="Classic Chocolate Chip" class="menu-img">
+               <p class="w3-text-grey">PHP 40.00</p>
+         
+        </div>
+      </div>
+    </div>
+
+</div>
+
+<!-- Order Form Container -->
+<div class="w3-container" id="order">
+    <div class="w3-content content-box">
+      <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">PLACE YOUR ORDER</span></h5>
+      <form action="/submit_order" method="POST">
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Your Name" required name="name"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="email" placeholder="Your Email" required name="email"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="tel" placeholder="Your Phone Number" required name="phone"></p>
+  
+        <!-- Order Details -->
+        <p><textarea class="w3-input w3-padding-16 w3-border" placeholder="Order Details (e.g., Cake, Cookies, Quantity)" required name="orderDetails"></textarea></p>
+  
+        <!-- Order Quantity (Optional) -->
+        <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Quantity (Optional)" name="quantity" min="1"></p>
+  
+        <!-- Special Instructions -->
+        <p><textarea class="w3-input w3-padding-16 w3-border" placeholder="Special Instructions (Optional)" name="specialInstructions"></textarea></p>
+  
+        <!-- Submit Button -->
+        <p><button class="w3-button w3-block" style="background-color: #f27b2b; color: white;" type="submit">Submit Order</button></p>
+      </form>
+    </div>
+  </div>
+
+  <div class="w3-top">
+    <div class="w3-row w3-padding custom-navbar">
+      <div class="w3-col s3">
+        <a href="#" class="w3-button w3-block custom-button">HOME</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="#about" class="w3-button w3-block custom-button">ABOUT</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="#menu" class="w3-button w3-block custom-button">MENU</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="#contact" class="w3-button w3-block custom-button">CONTACT US</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('orderForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        // Simulate order processing (replace with actual backend processing if needed)
+        setTimeout(function() {
+            document.getElementById('orderForm').style.display = 'none'; // Hide the form
+            document.getElementById('orderConfirmation').style.display = 'block'; // Show the confirmation message
+        }, 500); // Simulate a 0.5-second processing time.
+
+        //If you want to actually send the data to a backend, you would use fetch API or XMLHttpRequest here.
+
+        //Example fetch:
+        /*
+        const formData = new FormData(event.target);
+        fetch('/submit_order', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => {
+            if (response.ok) {
+                document.getElementById('orderForm').style.display = 'none';
+                document.getElementById('orderConfirmation').style.display = 'block';
+            } else {
+                console.error('Order submission failed');
+                alert('Order submission failed');
+            }
+        })
+        .catch(error => {
+            console.error('Network error:', error);
+            alert('Network error occurred');
+        });
+        */
+    });
+</script>
+  
+  <!-- Contact Us Section -->
+<footer class="w3-container w3-padding-48" style="background-color: var(--highlight-color);">
+    <div class="w3-row">
+        <div class="w3-container" id="contact">
+            <!-- Contact form or information goes here -->
+        </div>
+      <!-- Contact Details -->
+      <div class="w3-col s12">
+        <h5 class="w3-center">Contact Us</h5>
+        <div class="contact-details">
+          <p><strong>Address:</strong> 123 Bakery Lane, City, Country</p>
+          <p><strong>Phone:</strong> (123) 456-7890</p>
+          <p><strong>Email:</strong> contact@cmonsterbakery.com</p>
+          <p><strong>Social Media:</strong></p>
+          <ul class="social-media">
+            <li><a href="https://www.facebook.com/c.monsterph" target="_blank" class="social-button">Facebook</a></li>
+            <li><a href="https://instagram.com/c.monsterph" target="_blank" class="social-button">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Trademark Footer -->
+  <footer class="w3-container w3-padding-16" style="background-color: var(--secondary-color);">
+    <div class="w3-row">
+      <div class="w3-col s12">
+        <p class="w3-center" style="color: var(--primary-color);">© 2024 C.Monster Bakery. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  
+  
+  
+  
+  
+
+<script>
+
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
